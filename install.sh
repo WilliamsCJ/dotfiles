@@ -30,6 +30,7 @@ git clone https://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/z
 
 pip install wakatime
 git clone https://github.com/sobolevn/wakatime-zsh-plugin.git $ZSH_CUSTOM/plugins/wakatime # Wakatime
+echo "[settings]\napi_key = $WAKATIME_API_KEY" > $HOME/.wakatime.cfg
 
 # Install 
 
