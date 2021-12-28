@@ -1,4 +1,6 @@
 # chezmoiignore
 
+README.md
 install.sh
 install-macos.sh
+homebrew.txt
