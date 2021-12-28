@@ -24,18 +24,14 @@ plugins=(
 # Alias
 alias vim="nvim"
 alias vi="nvim"
-alias socks='~/.socks.sh'
-alias lab="ssh cjdw1@pc7-020-l.cs.st-andrews.ac.uk"
 alias ls="ls --color=always"
 
 # Environment variables
 export ZSH="/Users/cjwilliams/.oh-my-zsh"
-export PATH=$PATH:/opt/apache-maven/bin
 export GO_PATH=~/go
 export PATH=$PATH:/$GO_PATH/bin
 export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
 export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
-export GROOVY_HOME=/usr/local/opt/groovy/libexec
 export XDG_CONFIG_HOME=$HOME/.config
 export VISUAL="nvim"
 export EDITOR="nvim"
@@ -46,11 +42,9 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 # Dircolors
-echo "Setting up dircolors..."
 test -e ~/.dircolors && eval `dircolors -b ~/.dircolors`
 
 # oh-my-zsh
-echo "Loading oh-my-zsh..."
 source $ZSH/oh-my-zsh.sh
 
 echo "Done!"
