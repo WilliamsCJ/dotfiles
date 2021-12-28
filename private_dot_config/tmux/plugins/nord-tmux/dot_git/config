@@ -1,0 +1,15 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	ignorecase = true
+	precomposeunicode = true
+[submodule]
+	active = .
+[remote "origin"]
+	url = https://git::@github.com/arcticicestudio/nord-tmux
+	fetch = +refs/heads/develop:refs/remotes/origin/develop
+[branch "develop"]
+	remote = origin
+	merge = refs/heads/develop

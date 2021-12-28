@@ -1,0 +1,10 @@
+chezmoi
+neovim
+ripgrep
+fd
+podman
+klog
+asciinema
+treesitter
+luajit
+coreutils

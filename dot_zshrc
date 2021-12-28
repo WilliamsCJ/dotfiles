@@ -1,0 +1,56 @@
+echo "Loading zsh..."
+
+# ZSH config options
+ZSH_THEME="spaceship"
+SPACESHIP_PROMPT_ADD_NEWLINE=true
+SPACESHIP_PROMPT_SEPARATE_LINE=false
+
+CASE_SENSITIVE="false"
+HYPHEN_INSENSITIVE="false"
+
+ENABLE_CORRECTION="false"
+COMPLETION_WAITING_DOTS="true"
+
+# Plugins
+plugins=(
+	git
+	docker
+	zsh-syntax-highlighting
+	autojump
+	zsh-autosuggestions
+    wakatime
+)
+
+# Alias
+alias vim="nvim"
+alias vi="nvim"
+alias socks='~/.socks.sh'
+alias lab="ssh cjdw1@pc7-020-l.cs.st-andrews.ac.uk"
+alias ls="ls --color=always"
+
+# Environment variables
+export ZSH="/Users/cjwilliams/.oh-my-zsh"
+export PATH=$PATH:/opt/apache-maven/bin
+export GO_PATH=~/go
+export PATH=$PATH:/$GO_PATH/bin
+export PATH=/usr/local/opt/coreutils/libexec/gnubin:$PATH
+export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
+export GROOVY_HOME=/usr/local/opt/groovy/libexec
+export XDG_CONFIG_HOME=$HOME/.config
+export VISUAL="nvim"
+export EDITOR="nvim"
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# Dircolors
+echo "Setting up dircolors..."
+test -e ~/.dircolors && eval `dircolors -b ~/.dircolors`
+
+# oh-my-zsh
+echo "Loading oh-my-zsh..."
+source $ZSH/oh-my-zsh.sh
+
+echo "Done!"
