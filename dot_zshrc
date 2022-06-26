@@ -35,6 +35,7 @@ export MANPATH=/usr/local/opt/coreutils/libexec/gnuman:$MANPATH
 export XDG_CONFIG_HOME=$HOME/.config
 export VISUAL="nvim"
 export EDITOR="nvim"
+export GPG_TTY=$(tty)
 
 # NVM
 export NVM_DIR="$HOME/.nvm"
