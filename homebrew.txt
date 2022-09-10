@@ -1,4 +1,5 @@
 chezmoi
+git
 neovim
 ripgrep
 fd
