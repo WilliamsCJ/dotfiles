@@ -11,9 +11,9 @@ fi
 # Install oh-my-zsh
 if ! $CODESPACES ; then
   if [ "$(command -v curl)" ]; then
-    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
   elif [ "$(command -v wget)" ]; then
-    sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" "" --unattended
   else
     echo "To install ohmyzsh, you must have curl or wget installed." >&2
     exit 1
