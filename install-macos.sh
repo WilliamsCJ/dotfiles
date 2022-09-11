@@ -8,3 +8,9 @@ eval "open https://www.raycast.com" # Raycast launcher
 
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+# Set Codespaces false
+export CODESPACES=false
+
+# Run install script
+eval "./install.sh"
