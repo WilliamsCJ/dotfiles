@@ -5,6 +5,6 @@ ripgrep
 fd
 podman
 asciinema
-treesitter
+tree-sitter
 luajit
 coreutils
