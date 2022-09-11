@@ -1,10 +1,10 @@
 chezmoi
+git
 neovim
 ripgrep
 fd
 podman
-klog
 asciinema
-treesitter
+tree-sitter
 luajit
 coreutils
