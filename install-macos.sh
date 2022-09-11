@@ -4,6 +4,7 @@ eval "open https://www.jetbrains.com/lp/mono/" # JetBrains Mono font
 eval "open https://www.macbartender.com" # Bartender
 eval "open https://linear.app/download" # Linear issue tracking
 eval "open https://klog.jotaen.net" # Klog time tracking
+eval "open https://www.raycast.com" # Raycast launcher
 
 # Install Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
