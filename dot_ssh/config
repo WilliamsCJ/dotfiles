@@ -1,0 +1,36 @@
+UseKeychain yes
+
+Host *
+	IdentityAgent ~/.1password/agent.sock
+
+# CJ Williams GitHub Account
+Host github.com
+	HostName github.com
+	User git
+
+# CS Server SSH Proxy
+CanonicalDomains cs.st-andrews.ac.uk
+CanonicalizeHostname yes
+
+Host cs
+    ProxyCommand none
+    HostName cjdw1.host.cs.st-andrews.ac.uk
+    User cjdw1
+
+Match Host !*.host.cs.st-andrews.ac.uk,*.st-andrews.ac.uk,!gitlab.cs.st-andrews.ac.uk,138.251.*
+    ProxyCommand ssh -xaq -W %h:%p cs
+    Port 22
+    DynamicForward 8123
+    RemoteCommand cd /cs/home/cjdw1/cs && exec bash --login
+    RequestTTY yes
+
+Host socks
+    User cjdw1
+    HostName cjdw1.host.cs.st-andrews.ac.uk
+    Port 22
+    DynamicForward 8123
+
+# Tatooine Box
+Host tatooine
+    HostName tatooine
+    User cj
