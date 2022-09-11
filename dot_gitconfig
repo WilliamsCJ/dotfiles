@@ -1,0 +1,32 @@
+[user]
+	email = cj@cjwilliams.io
+	name = CJ Williams
+	signingkey = key::ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIILyVhNgK5fYB7QCXtO0czsVCl6VAodkQp6Gw3WxnVlS
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[url "ssh://git@github.com/"]
+	insteadOf = https://github.com/
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+	trustExitCode = true
+[pull]
+	rebase = false
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[gpg]
+  format = ssh
+[gpg "ssh"]
+  program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign"
+[commit]
+  gpgsign = true
+
+[push]
+	default = current
+	autoSetupRemote = true
