@@ -10,3 +10,4 @@ luajit
 coreutils
 node
 nvm
+yarn
