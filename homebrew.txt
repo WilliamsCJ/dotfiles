@@ -8,3 +8,6 @@ asciinema
 tree-sitter
 luajit
 coreutils
+node
+nvm
+yarn
